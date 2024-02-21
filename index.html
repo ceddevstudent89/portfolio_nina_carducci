@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- language fr ltr direction occidental -->
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8" />
@@ -7,63 +8,64 @@
     <meta name="copyright" content="© Nina Carducci" />
     <meta
       name="description"
-      content="Portfolio de Nina Carducci, photographe professionnelle. Découvrez ses services de shooting photo, retouches et albums. Contactez-la pour vos besoins photographiques."
+      content="Site web de Nina Carducci, photographe professionnel capturant des moments uniques avec passion et créativité."
     />
-    <meta name="theme-color" content="#fff" />
-    <meta name="robots" content="index, follow" />
-    <!-- Balises meta spécifiques pour Facebook et Twitter -->
+
+    <!-- Meta donnés pour le référencement facebook -->
     <meta
       property="og:title"
-      content="Nina Carducci - Photographe - Bordeaux"
+      content="Nina Carducci - Photographe professionnel - Bordeaux"
     />
     <meta
       property="og:description"
-      content="Site web de Nina Carducci, photographe professionnel capturant des moments iniques avec passion et créativité."
+      content="Site web de Nina Carducci, photographe professionnel capturant des moments uniques avec passion et créativité."
     />
     <meta
       property="og:image"
-      content="https://ceddevstudent89.github.io/portfolio_nina_carducci/assets/images/nina-800.webp"
+      content="https://ceddevstudent89.github.io/portfolio_nina_carducci/images/nina.webp"
     />
+    <!-- URL de votre image -->
     <meta
       property="og:url"
       content="https://ceddevstudent89.github.io/portfolio_nina_carducci/"
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
-    <!-- Twitter -->
+    <!-- Meta donnés pour le référencement Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Nina Carducci - Photographe - Bordeaux"
+      content="Nina Carducci - Photographe professionnel - Bordeaux"
     />
     <meta
       name="twitter:description"
-      content="Site web de Nina Carducci, photographe professionnel capturant des moments iniques avec passion et créativité."
+      content="Site web de Nina Carducci, photographe professionnel capturant des moments uniques avec passion et créativité."
     />
     <meta
       name="twitter:image"
-      content="https://ceddevstudent89.github.io/portfolio_nina_carducci/assets/images/nina-800.webp"
+      content="https://ceddevstudent89.github.io/portfolio_nina_carducci/images/nina.webp"
     />
-    <!-- Balise pour la version alternative en anglais -->
-    <link rel="alternate" hreflang="en" href="https://votre-site.fr/en/" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
+    <!-- URL de votre image -->
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <!-- <link rel="preload" href="./assets/style.css" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Nina Carducci - Photographe</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Portfolio de Nina Carducci - Photographe Professionnelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,300;0,800;1,300&display=swap"
+      rel="stylesheet"
+      defer
+    />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@type": "PhotographieService",
-        "name": "Nina Carducci Photographe professionnelle",
+        "@context": "http://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nina Carducci",
+        "image": "./assets/images/nina.webp",
+        "url": "https://ninacarducci.github.io/",
+        "priceRange": "50€ - 400€",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "68 avenue Alsace-Lorraine",
@@ -71,21 +73,43 @@
           "postalCode": "33200",
           "addressCountry": "FR"
         },
-        "description": "Portfolio de Nina Carducci, photographe professionnelle. Découvrez ses services de shooting photo, retouches et albums. Contactez-la pour vos besoins photographiques.",
         "telephone": "+33556677889",
-        "openingHours": ["Mo-Fr 10:00-19:00"],
-        "image": "https://exemple.com/chemin/vers/image.jpg",
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 44.8378,
-          "longitude": -0.5792
-        },
-        "priceRange": "50€ / Photo",
-        "serviceType": ["Shooting photo", "Retouches", "Album photos"],
-        "areaServed": "Île-de-France"
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo"],
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "EUR",
+            "valueAddedTaxIncluded": true,
+            "price": 350,
+            "minPrice": 50,
+            "maxPrice": 400,
+            "validFrom": "2024-02-21"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Photographie",
+            "description": "350€ pour une demi-journée, 50€ par photo, 400€ pour un album A4 de 30 pages recto/verso."
+          }
+        }
       }
     </script>
   </head>
+
   <body>
     <header class="top-header">
       <h1 class="name">Nina Carducci</h1>
@@ -102,14 +126,16 @@
               target="_blank"
               ><img
                 src="assets/images/instagram.png"
-                alt="instagram de Nina Carducci"
+                width="20"
+                height="20"
+                alt="Logo instagram"
             /></a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="header">
+      <div id="header">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -148,7 +174,6 @@
                   src="./assets/images/slider/ryoji-iwata.webp"
                   class="d-block w-100"
                   alt="Un homme qui traverse un passage piéton"
-                  loading="lazy"
                 />
               </picture>
             </div>
@@ -163,8 +188,7 @@
                 <img
                   src="./assets/images/slider/nicholas-green.webp"
                   class="d-block w-100"
-                  alt="Une foule qui danse dans un concert"
-                  loading="lazy"
+                  alt="Une Foule qui danse dans un concert."
                 />
               </picture>
             </div>
@@ -177,8 +201,7 @@
                 <img
                   src="./assets/images/slider/mariageDanse.webp"
                   class="d-block w-100"
-                  alt="Couple de mariés qui danse"
-                  loading="lazy"
+                  alt="Couple de marié qui danse autour de leurs invités"
                 />
               </picture>
             </div>
@@ -202,30 +225,32 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </section>
-      <section id="about">
-        <figure class="picture left">
-          <img src="./assets/images/nina.webp" alt="Photo de Nina Carducci" />
-        </figure>
-        <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
-          <p class="about-me__introduction">
-            Devenir photographe était pour moi une évidence. Comme si j’y étais
-            prédestiné. Saisir un moment, une émotion, une situation, un
-            endroit, une lumière et les rendre immortels, voilà ce qui me fait
-            vibrer.
-          </p>
-          <p>
-            Nous passons notre vie à chercher le bonheur, et lorsque nous y
-            touchons, nous n’avons qu’une envie : le figer au travers de
-            photographies pour le savourer avec les personnes qui sont
-            importantes à nos yeux, ou le partager au plus grand nombre. C’est
-            ce que je vous propose : saisir ces merveilleux moments au travers
-            de mon regard, mon approche, ma technique. Rendre ces moments
-            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
-            de la tendresse et de lumière à chaque fois que vous poserez les
-            yeux sur vos photos.
-          </p>
+      </div>
+      <section>
+        <div id="about">
+          <div class="picture left">
+            <img src="./assets/images/nina.webp" alt="Photo de Nina Carducci" />
+          </div>
+          <div id="about-me">
+            <h2 class="about-me__title">A propos de moi</h2>
+            <p class="about-me__introduction">
+              Devenir photographe était pour moi une évidence. Comme si j’y
+              étais prédestiné. Saisir un moment, une émotion, une situation, un
+              endroit, une lumière et les rendre immortels, voilà ce qui me fait
+              vibrer.
+            </p>
+            <p class="about-me__content">
+              Nous passons notre vie à chercher le bonheur, et lorsque nous y
+              touchons, nous n’avons qu’une envie : le figer au travers de
+              photographies pour le savourer avec les personnes qui sont
+              importantes à nos yeux, ou le partager au plus grand nombre. C’est
+              ce que je vous propose : saisir ces merveilleux moments au travers
+              de mon regard, mon approche, ma technique. Rendre ces moments
+              immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
+              de la tendresse et de lumière à chaque fois que vous poserez les
+              yeux sur vos photos.
+            </p>
+          </div>
         </div>
       </section>
       <section>
@@ -259,35 +284,35 @@
                 class="gallery-item"
                 loading="lazy"
                 src="./assets/images/gallery/mariage/hannah-busing.webp"
-                alt="Mains Mariage hannah-busing"
+                alt="Mains qui se rejoignent, mariage hannah-busing"
               />
               <img
                 data-gallery-tag="Portrait"
                 class="gallery-item"
                 loading="lazy"
                 src="./assets/images/gallery/portraits/ade-tunji.webp"
-                alt="Portrait ade-tunji"
+                alt="Portrait d'un homme les yeux fermés ade-tunji"
               />
               <img
                 data-gallery-tag="Mariages"
                 class="gallery-item"
                 loading="lazy"
                 src="./assets/images/gallery/mariage/MariagePalmier.webp"
-                alt="Mariés sous un Palmier"
+                alt="Couple de mariés sous un Palmier"
               />
               <img
                 data-gallery-tag="Portrait"
                 class="gallery-item"
                 loading="lazy"
                 src="./assets/images/gallery/portraits/nino-van.webp"
-                alt="Femme Portrait Lunettes"
+                alt="Portrait d'un femme avec des Lunettes"
               />
               <img
                 data-gallery-tag="Concert"
                 class="gallery-item"
                 loading="lazy"
                 src="./assets/images/gallery/concerts/austin-neill.webp"
-                alt="Concert austin-neill"
+                alt="Un chantant lors d'un concert austin-neill"
               />
               <img
                 data-gallery-tag="Entreprises"
@@ -312,10 +337,10 @@
           </div>
         </div>
       </section>
-      <section id="services">
+      <div id="services">
         <h2 class="title">Mes services</h2>
         <div class="container">
-          <article class="service">
+          <div class="service">
             <div class="service__description">
               <h3>Shooting photo</h3>
               <p>
@@ -328,8 +353,8 @@
               <h4>350€/demi journée</h4>
               <span>Matériel, déplacement inclus</span>
             </div>
-          </article>
-          <article class="service">
+          </div>
+          <div class="service">
             <div class="service__description">
               <h3>Retouches</h3>
               <p>
@@ -342,8 +367,8 @@
               <h4>50€/photo</h4>
               <span>2 AR par photo</span>
             </div>
-          </article>
-          <article class="service">
+          </div>
+          <div class="service">
             <div class="service__description">
               <h3>Album photos</h3>
               <p>
@@ -355,22 +380,20 @@
               <h4>400€ album A4</h4>
               <span>30 pages recto/verso</span>
             </div>
-          </article>
+          </div>
         </div>
-      </section>
+      </div>
       <div class="quote">
         <figure>
-          <blockquote>
-            <p class="quote__text">
-              De manière inconsciente, je crois, je guette un regard, une
-              expression, des traits ou une nostalgie capable de résumer ou plus
-              exactement de révéler une vie
-            </p>
+          <blockquote class="quote__text">
+            De manière inconsciente, je crois, je guette un regard, une
+            expression, des traits ou une nostalgie capable de résumer ou plus
+            exactement de révéler une vie
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-      <section id="contact">
+      <div id="contact">
         <div class="container">
           <div class="form-container">
             <h2>Une question ? Une demande de devis ?</h2>
@@ -378,16 +401,22 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="" method="post">
+            <form method="post">
               <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom" required />
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                required
+                placeholder="Entrez votre nom"
+              />
               <label for="email">Email</label>
               <input
                 type="email"
                 name="email"
                 id="email"
                 required
-                placeholder="ninacarducci@example.com"
+                placeholder="exemple@domaine.com"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
               <label for="message">Message</label>
@@ -397,25 +426,23 @@
                 cols="30"
                 rows="10"
                 required
-                placeholder="Votre message ici..."
+                placeholder="Votre message ici"
               ></textarea>
               <input type="submit" value="Envoyer" />
             </form>
           </div>
-          <figure class="picture right">
+          <div class="picture right">
             <img
               src="./assets/images/camera.webp"
               loading="lazy"
               width="548"
               height="548"
-              alt="Photo d'un appareil photo et caméra."
-              loading="lazy"
+              alt="Photo d'une camera noire"
             />
-          </figure>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
-    <!-- Ajouter d'un footer -->
     <footer>
       <div>
         <address>
@@ -426,13 +453,13 @@
         <p>Horaires d'ouverture : Lundi - Vendredi de 10h à 19h.</p>
       </div>
     </footer>
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js" defer></script>
-    <script src="./assets/scripts.js" defer></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </body>
 </html>
