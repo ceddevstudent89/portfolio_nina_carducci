@@ -69,6 +69,7 @@ body {
 
 .picture img {
   width: 100%;
+  height: auto;
 }
 #about-me {
   flex: 2;
@@ -84,13 +85,13 @@ body {
   font-style: italic;
   width: 60%;
 }
-#about-me p {
+.about-me__content {
   width: 80%;
   font-size: 14px;
 }
 
 #gallery {
-  /*	min-height: 100vh; */
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -102,11 +103,12 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #000;
+  background-color: #1c6474;
   border-radius: 0;
 }
 .nav-pills .nav-link {
   color: #000;
+  cursor: pointer;
 }
 .item-column {
   position: relative;
@@ -121,7 +123,7 @@ body {
 .gallery-item {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100% ;
   object-fit: cover;
   padding: 0.5em;
 }
@@ -147,6 +149,7 @@ body {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+  font-size: 2.5rem;
 }
 .quote__author {
   font-family: Spectral;
@@ -241,6 +244,18 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 
+footer {
+  background-color: #1c6474;
+  padding-block: 2em;
+  color: white;
+  text-align: center;
+  p {
+    a {
+      color: white;
+    }
+  }
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
@@ -253,8 +268,8 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
-  #about-me p {
+  #about-me .about-me__introduction,
+  #about-me .about-me__content {
     width: 100%;
   }
 }
@@ -352,5 +367,11 @@ input[type="submit"] {
   }
   .picture {
     width: 80%;
+    object-fit: cover;
+  }
+  footer {
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
